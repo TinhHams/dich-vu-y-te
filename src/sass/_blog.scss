@@ -4,7 +4,6 @@
 
     .blog-container {
         height: 100%;
-        margin: 20px 80px;
         line-height: 1.5;
 
         &-title {
@@ -25,6 +24,10 @@
                 align-items: center;
                 gap: 8px;
 
+                @include mobile {
+                    flex-direction: column;
+                }
+
                 .blog-card {
                     width: 44%;
                     height: 160px;
@@ -35,6 +38,11 @@
                     flex-direction: row;
                     align-items: center;
                     gap: 8px;
+
+                    @include mobile {
+                        width: 100%;
+                        height: max-content;
+                    }
 
                     .blog-img {
                         width: 60%;
@@ -53,6 +61,16 @@
                     .blog-text {
                         width: 100%;
                         text-align: justify;
+
+                        @include mobile {
+                            h3 {
+                                text-align: left;
+                            }
+
+                            p {
+                                display: none;
+                            }
+                        }
                     }
 
                     &:hover > .blog-text h3 {

@@ -112,6 +112,14 @@ body {
     }
 }
 
+.container-m {
+    margin: 20px 80px;
+
+    @include tablet {
+        margin: 20px 40px;
+    }
+}
+
 @keyframes animatedIcon {
     from {
         opacity: 0;

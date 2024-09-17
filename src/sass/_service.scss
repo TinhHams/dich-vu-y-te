@@ -5,7 +5,6 @@
 
     .service-container {
         height: 100%;
-        margin: 20px 80px;
         line-height: 1.5;
         display: flex;
         flex-direction: column;
@@ -26,12 +25,20 @@
             gap: 16px;
             align-items: center;
 
+            @include mobile {
+                flex-direction: column;
+            }
+
             .service-card {
                 width: 30%;
                 flex-grow: 1;
                 background-color: $blue-2;
                 border-radius: 8px;
                 overflow: hidden;
+
+                @include mobile {
+                    width: 100%;
+                }
 
                 .card-container {
                     width: 100%;
@@ -44,6 +51,10 @@
                         height: 440px;
                         position: relative;
 
+                        @include mobile {
+                            height: max-content;
+                        }
+
                         .card-img {
                             margin: 8px auto;
                             width: 100%;
@@ -51,6 +62,10 @@
                             overflow: hidden;
                             border-radius: 8px;
                             transition: all 0.3s linear;
+
+                            @include mobile {
+                                height: max-content;
+                            }
 
                             img {
                                 width: 100%;
