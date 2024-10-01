@@ -106,6 +106,7 @@
                     }
 
                     i {
+                        width: 41.6px !important;
                         border: 1px solid $black;
                         border-radius: 50%;
                     }
@@ -196,7 +197,7 @@
         }
 
         .navbar {
-            display: flex;
+            display: none;
             flex-direction: row;
             align-items: center;
             gap: 32px;
@@ -209,6 +210,12 @@
 
             @include mobile {
                 display: none;
+
+                &.active-nav {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
             }
 
             li {
@@ -239,6 +246,43 @@
                 i {
                     @include tablet {
                         display: none;
+                    }
+                }
+
+                &.service {
+                    position: relative;
+                    transition: all 0.6s linear;
+
+                    .service-nav {
+                        display: none;
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                        background-color: $white-2;
+                        border-radius: 12px;
+                        color: $blue-2;
+                        line-height: 1.5;
+                        padding: 8px 12px;
+                        transition: all 0.6s linear;
+
+                        .item {
+                            padding: 4px 0;
+
+                            a {
+                                opacity: 0.7;
+
+                                &:hover {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover > .service-nav {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: left;
+                        transition: all 0.6s linear;
                     }
                 }
             }
