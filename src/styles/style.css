@@ -129,6 +129,10 @@ body .to-top-icon .scroll-top:hover i {
   }
 }
 
+.pt-12 {
+  padding-top: 12px;
+}
+
 @keyframes animatedIcon {
   from {
     opacity: 0;
@@ -679,6 +683,71 @@ body .to-top-icon .scroll-top:hover i {
   height: 280px;
   object-fit: cover;
   object-position: center;
+}
+
+#feedback {
+  width: 100%;
+  height: 100%;
+}
+#feedback .feedback-container {
+  height: 100%;
+}
+#feedback .feedback-container-title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #085d90;
+}
+#feedback .feedback-container-content {
+  width: 100%;
+  padding-top: 24px;
+}
+#feedback .feedback-container-content .feedback-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#feedback .feedback-container-content .feedback-list .feedback-box {
+  width: 30%;
+  flex-basis: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  line-height: 1.5;
+}
+#feedback .feedback-container-content .feedback-list .feedback-box .message {
+  text-align: justify;
+}
+#feedback .feedback-container-content .feedback-list .feedback-box .service-name {
+  font-style: italic;
+  opacity: 0.8;
+}
+#feedback .feedback-container-content .feedback-list .feedback-box .info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+#feedback .feedback-container-content .pagination ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+#feedback .feedback-container-content .pagination ul li {
+  padding: 4px;
+  border-radius: 2px;
+  width: 20px;
+  text-align: center;
+}
+#feedback .feedback-container-content .pagination ul li.now, #feedback .feedback-container-content .pagination ul li:hover {
+  background-color: #085d90;
+  color: #fefeef;
+  transition: 0.3s linear;
+}
+#feedback .feedback-container-content .pagination ul li a {
+  width: 20px;
+  height: 20px;
 }
 
 #news {
