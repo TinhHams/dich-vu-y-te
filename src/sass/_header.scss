@@ -15,7 +15,6 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            margin: 12px auto;
 
             @include mobile {
                 flex-direction: column;

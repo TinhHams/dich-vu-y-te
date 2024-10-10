@@ -179,7 +179,6 @@ body .to-top-icon .scroll-top:hover i {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 12px auto;
 }
 @media screen and (max-width: 430px) {
   #header .header-top-container {
