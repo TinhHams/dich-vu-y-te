@@ -477,7 +477,7 @@ body .to-top-icon .scroll-top:hover i {
 #intro .intro-container-content .intro-top {
   line-height: 1.5;
 }
-#intro .intro-container-content .intro-top h2 {
+#intro .intro-container-content .intro-top h1 {
   color: #085d90;
   font-weight: bold;
   text-align: center;
@@ -492,7 +492,7 @@ body .to-top-icon .scroll-top:hover i {
   width: 100%;
   line-height: 1.5;
 }
-#intro .intro-container-content .intro-detail h3 {
+#intro .intro-container-content .intro-detail h1 {
   color: #085d90;
   text-align: center;
   text-transform: uppercase;
