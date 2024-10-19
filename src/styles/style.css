@@ -209,6 +209,11 @@ body .to-top-icon .scroll-top:hover i {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 430px) {
+  #header .header-top-container .logo-wrapper a .brand {
+    font-size: 1.1rem;
+  }
+}
 #header .header-top-container .search {
   width: 320px;
 }
