@@ -635,7 +635,7 @@ body .to-top-icon .scroll-top:hover i {
   border-radius: 8px;
   box-shadow: #b8acaa 0px 3px 8px;
   cursor: pointer;
-  transition: all 0.3s linear;
+  transition: all 800ms linear;
 }
 @media screen and (max-width: 430px) {
   #why .why-container-content .why-card {
@@ -659,8 +659,8 @@ body .to-top-icon .scroll-top:hover i {
   color: #085d90;
 }
 #why .why-container-content .why-card:hover {
-  scale: 1.1;
-  transition: all 0.3s linear;
+  transition: all 800ms linear;
+  transform: rotateY(360deg);
 }
 #why .why-container-img {
   padding-top: 20px;
