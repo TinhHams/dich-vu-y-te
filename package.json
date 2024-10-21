@@ -1,0 +1,35 @@
+{
+  "name": "dich-vu-y-te",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinhHams/dich-vu-y-te.git"
+  },
+  "keywords": [
+    "dich",
+    "vu",
+    "y",
+    "te",
+    "cham",
+    "soc",
+    "benh",
+    "dieu",
+    "duong",
+    "cham",
+    "benh"
+  ],
+  "author": "giatinh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TinhHams/dich-vu-y-te/issues"
+  },
+  "homepage": "https://github.com/TinhHams/dich-vu-y-te#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
