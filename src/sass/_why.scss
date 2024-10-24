@@ -32,7 +32,7 @@
                 border-radius: 8px;
                 box-shadow: $gray-1 0px 3px 8px;
                 cursor: pointer;
-                transition: all 0.3s linear;
+                transition: all 800ms linear;
 
                 @include mobile {
                     width: 100%;
@@ -59,8 +59,9 @@
                 }
 
                 &:hover {
-                    scale: 1.1;
-                    transition: all 0.3s linear;
+                    // scale: 1.1;
+                    transition: all 800ms linear;
+                    transform: rotateY(360deg);
                 }
             }
         }
