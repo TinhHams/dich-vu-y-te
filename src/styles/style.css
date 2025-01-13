@@ -36,6 +36,7 @@ section > div {
 body {
   position: relative;
   z-index: 1;
+  background-color: #fefeef;
 }
 body .contact-icon {
   position: fixed;
@@ -963,6 +964,9 @@ body .to-top-icon .scroll-top:hover i {
   margin-top: 20px;
   text-transform: uppercase;
   color: #085d90;
+}
+#footer .footer-container-content .content-box .box-text ul li {
+  list-style: disc;
 }
 #footer .footer-container-content .content-box .box-service ul li {
   list-style: disc;
