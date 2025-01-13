@@ -25,10 +25,16 @@
             }
 
             .content-box {
-                .box-text h3 {
-                    margin-top: 20px;
-                    text-transform: uppercase;
-                    color: $blue-2;
+                .box-text {
+                    h3 {
+                        margin-top: 20px;
+                        text-transform: uppercase;
+                        color: $blue-2;
+                    }
+
+                    ul li {
+                        list-style: disc;
+                    }
                 }
 
                 .box-service {
