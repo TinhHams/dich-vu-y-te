@@ -181,7 +181,7 @@ body .to-top-icon .scroll-top:hover i {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #header .header-top-container {
     flex-direction: column;
     gap: 0;
@@ -210,7 +210,7 @@ body .to-top-icon .scroll-top:hover i {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #header .header-top-container .logo-wrapper a .brand {
     font-size: 1.1rem;
   }
@@ -223,7 +223,7 @@ body .to-top-icon .scroll-top:hover i {
     width: 200px;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #header .header-top-container .search {
     display: none;
   }
@@ -267,7 +267,7 @@ body .to-top-icon .scroll-top:hover i {
     gap: 12px;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #header .header-top-container .cta-area .cta-container {
     flex-direction: column;
   }
@@ -277,7 +277,7 @@ body .to-top-icon .scroll-top:hover i {
   border: 1px solid #101732;
   border-radius: 50%;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #header .header-top-container .cta-area .cta-container i {
     padding: 0;
     border: none;
@@ -315,7 +315,7 @@ body .to-top-icon .scroll-top:hover i {
 #header .header-nav .menu {
   display: none;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #header .header-nav .menu {
     display: flex;
     flex-direction: row;
@@ -366,7 +366,7 @@ body .to-top-icon .scroll-top:hover i {
     justify-content: space-between;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #header .header-nav .navbar {
     display: none;
   }
@@ -543,7 +543,7 @@ body .to-top-icon .scroll-top:hover i {
   gap: 16px;
   align-items: center;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #service .service-container-content {
     flex-direction: column;
   }
@@ -555,7 +555,7 @@ body .to-top-icon .scroll-top:hover i {
   border-radius: 8px;
   overflow: hidden;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #service .service-container-content .service-card {
     width: 100%;
   }
@@ -571,7 +571,7 @@ body .to-top-icon .scroll-top:hover i {
   height: 440px;
   position: relative;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #service .service-container-content .service-card .card-container .card-detail {
     height: max-content;
   }
@@ -584,7 +584,7 @@ body .to-top-icon .scroll-top:hover i {
   border-radius: 8px;
   transition: all 0.3s linear;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #service .service-container-content .service-card .card-container .card-detail .card-img {
     height: 200px;
   }
@@ -622,7 +622,7 @@ body .to-top-icon .scroll-top:hover i {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #why .why-container-content {
     flex-direction: column;
     gap: 12px;
@@ -638,7 +638,7 @@ body .to-top-icon .scroll-top:hover i {
   cursor: pointer;
   transition: all 800ms linear;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #why .why-container-content .why-card {
     width: 100%;
     height: max-content;
@@ -681,7 +681,7 @@ body .to-top-icon .scroll-top:hover i {
   flex-wrap: wrap;
   gap: 20px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #why .why-container-img .img-box {
     flex-direction: column;
   }
@@ -691,7 +691,7 @@ body .to-top-icon .scroll-top:hover i {
   flex-grow: 1;
   padding: 12px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #why .why-container-img .img-box .img-card {
     width: 100%;
   }
@@ -726,7 +726,7 @@ body .to-top-icon .scroll-top:hover i {
   align-items: flex-start;
   justify-content: space-between;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #feedback .feedback-container-content .feedback-list {
     flex-direction: column;
   }
@@ -739,7 +739,7 @@ body .to-top-icon .scroll-top:hover i {
   gap: 12px;
   line-height: 1.5;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #feedback .feedback-container-content .feedback-list .feedback-box {
     width: 100%;
     border-radius: 16px;
@@ -807,7 +807,7 @@ body .to-top-icon .scroll-top:hover i {
   gap: 4px;
   cursor: pointer;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #news .news-container-content .news-box {
     flex-direction: column;
   }
@@ -819,7 +819,7 @@ body .to-top-icon .scroll-top:hover i {
   border-radius: 12px;
   padding: 12px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #news .news-container-content .news-box .news-card {
     width: 100%;
     height: max-content;
@@ -877,7 +877,7 @@ body .to-top-icon .scroll-top:hover i {
   align-items: center;
   gap: 8px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #blog .blog-container-content .blog-box {
     flex-direction: column;
   }
@@ -893,7 +893,7 @@ body .to-top-icon .scroll-top:hover i {
   align-items: center;
   gap: 8px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #blog .blog-container-content .blog-box .blog-card {
     width: 100%;
     height: max-content;
@@ -915,7 +915,7 @@ body .to-top-icon .scroll-top:hover i {
   width: 100%;
   text-align: justify;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #blog .blog-container-content .blog-box .blog-card .blog-text h3 {
     text-align: left;
   }
@@ -944,7 +944,7 @@ body .to-top-icon .scroll-top:hover i {
   align-items: flex-start;
   gap: 12px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #footer .footer-container {
     flex-direction: column;
   }
@@ -955,7 +955,7 @@ body .to-top-icon .scroll-top:hover i {
   padding: 12px;
   line-height: 1.5;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
   #footer .footer-container-content {
     width: 100%;
   }
