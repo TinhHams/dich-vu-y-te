@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/thay-bang-cat-chi", "destination": "/thay-bang-cat-chi.html" }
+  ]
+}
