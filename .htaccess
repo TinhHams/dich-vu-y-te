@@ -1,12 +1,6 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On
+RewriteEngine On
 
-# Bỏ qua file và thư mục thật (CSS, JS, hình ảnh, v.v.)
+# Tự động thêm .html nếu người dùng không gõ
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Tất cả các request còn lại đều chuyển về index.html
-
-RewriteRule ^ index.html [L]
-</IfModule>
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
