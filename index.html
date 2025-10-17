@@ -276,9 +276,8 @@
                                 </div>
                             </a>
                         </div>
-
                         <div class="service-card">
-                            <a class="card-container" href="">
+                            <a class="card-container" href="/rua-vet-thuong" data-page="sub.html" id="ruaVetThuongLink">
                                 <div class="card-detail">
                                     <div class="card-img">
                                         <img src="/src/assets/img/thay-bang-vet-thuong.jpg" alt="" />
@@ -754,6 +753,64 @@
                     page.classList.add('now');
                 } else {
                 }
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const links = document.querySelectorAll('a[data-page]');
+
+                links.forEach((link) => {
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        const newUrl = link.getAttribute('href');
+                        const pageToLoad = link.getAttribute('data-page');
+
+                        // Thay đổi URL trên trình duyệt mà không reload trang
+                        window.history.pushState({}, '', newUrl);
+
+                        // Tải nội dung từ sub.html
+                        fetch(pageToLoad)
+                            .then((response) => {
+                                if (!response.ok) {
+                                    throw new Error('Không thể tải nội dung.');
+                                }
+                                return response.text();
+                            })
+                            .then((data) => {
+                                document.getElementById('content').innerHTML = data;
+                            })
+                            .catch((error) => {
+                                console.error(error);
+                                document.getElementById('content').innerHTML = '<p>Lỗi khi tải trang con.</p>';
+                            });
+                    });
+                });
+
+                // Khi người dùng ấn nút Back / Forward trên trình duyệt
+                window.addEventListener('popstate', function () {
+                    const path = window.location.pathname;
+
+                    // Mapping đơn giản giữa path và file nội dung
+                    const routeMap = {
+                        '/rua-vet-thuong': 'sub.html',
+                    };
+
+                    const pageToLoad = routeMap[path];
+
+                    if (pageToLoad) {
+                        fetch(pageToLoad)
+                            .then((response) => response.text())
+                            .then((data) => {
+                                document.getElementById('content').innerHTML = data;
+                            })
+                            .catch((err) => {
+                                document.getElementById('content').innerHTML = '<p>Lỗi khi tải trang con.</p>';
+                            });
+                    } else {
+                        // Trở về trang gốc
+                        document.getElementById('content').innerHTML = '<p>Trang không tồn tại.</p>';
+                    }
+                });
             });
         </script>
     </body>
