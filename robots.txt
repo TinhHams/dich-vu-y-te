@@ -1,0 +1,11 @@
+# robots.txt cho dichvuchambenh.com
+User-agent: *
+Allow: /
+
+# Ngăn chặn index các file nhạy cảm (nếu có)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /uploads/private/
+
+# Khai báo sơ đồ trang web
+Sitemap: https://www.dichvuchambenh.com/sitemap.xml
