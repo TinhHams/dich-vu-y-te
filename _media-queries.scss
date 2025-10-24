@@ -1,0 +1,36 @@
+// @mixin tablet {
+//     @media screen and (max-width: 768px) {
+//         @content;
+//     }
+// }
+
+// @mixin mobile {
+//     @media screen and (max-width: 432px) {
+//         @content;
+//     }
+// }
+
+/* ----- Thiết bị tablet ----- */
+@mixin tablet {
+    @media screen and (max-width: 834px) {
+        // iPad Mini, iPad Air ở chiều dọc
+        @content;
+    }
+}
+
+/* ----- Thiết bị mobile ----- */
+/* Bao phủ toàn bộ iPhone từ SE (375px) đến 16 Pro Max (430px) */
+@mixin mobile {
+    @media screen and (max-width: 450px),
+        screen and (device-width: 430px) and (-webkit-min-device-pixel-ratio: 3),
+        screen and (device-width: 428px) and (-webkit-min-device-pixel-ratio: 3) {
+        @content;
+    }
+}
+
+/* ----- iPhone 16 Pro Max cụ thể ----- */
+@mixin iphone16promax {
+    @media only screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) {
+        @content;
+    }
+}
