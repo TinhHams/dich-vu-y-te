@@ -35,8 +35,10 @@
                     padding: 12px;
 
                     @include mobile {
-                        width: 100%;
-                        height: max-content;
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
                     }
 
                     .news-img {

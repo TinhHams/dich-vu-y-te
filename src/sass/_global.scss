@@ -2,6 +2,7 @@ body {
     position: relative;
     z-index: 1;
     background-color: $white-2;
+    overflow-x: hidden;
 
     .contact-icon {
         position: fixed;
